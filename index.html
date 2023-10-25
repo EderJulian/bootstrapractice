@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Gestión de Usuarios</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#crear-usuario">Crear Usuario</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#usuarios">Usuarios</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container mt-4">
+        <div id="crear-usuario">
+            <h2>Crear Usuario</h2>
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" class="form-control" id="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="password1">Contraseña:</label>
+                    <input type="password" class="form-control" id="password1" required>
+                </div>
+                <div class="form-group">
+                    <label for="password2">Confirmar Contraseña:</label>
+                    <input type="password" class="form-control" id="password2" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Crear Usuario</button>
+            </form>
+        </div>
+
+        <div id="usuarios" style="display: none;">
+            <h2>Usuarios</h2>
+            <div class="row" id="user-list">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
